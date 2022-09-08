@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <title>ikramsyawal</title>
 </head>
 
@@ -18,7 +19,7 @@
         </div>
         <div class="last" id="top-nav">
             <a href="#about">about</a>
-            <a href="">portfolio</a>
+            <a href="#portfolio">portfolio</a>
             <a href="">blog</a>
             <a href="">team</a>
             <a href="">contact</a>
@@ -26,36 +27,157 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-
     </nav>
     <div class="container">
         <section class="home" id="home">
             <h1>hi, i'm ikram</h1>
             <h1>i'm a <span class="auto-type"></span></h1>
         </section>
+
         <section class="about" id="about">
             <h1>print(<span class="about-span">about_me</span>())</h1>
-            <div class="about-content">
-                <div>
+            <div class="about-hide">
+                <div class="about-card">
+                    <div class="about-card-txt">
+                        <h4>Born in 1997, Raised in small town Gorontalo, Sulawesi Island.</h4>
+                        <br>
+                        <p>I'm Ikram Syawal alitu, a multi passinate from Gorontalo, Indonesia. I'm currently work
+                            in indie
+                            game studio at Otanaha Studio, creating and designing for 2 years</p>
+                        <br>
+                        <p>Proficient in Blender low Poly, Godot Engine and Gdscript, Python, and Html, CSS, JS</p>
+                        <br>
+                        <p>I love game jam, Indomie Goreng, rain, tea, and beach</p>
+                    </div>
                     <img src="img/pexels-andrea-piacquadio-3761514.png" alt="profile">
                 </div>
-                <div class="about-txt">
-                    <h4>Born in 1997.</h4>
-                    <br>
-                    <p>I'm Ikram Syawal alitu, a multi passinate from Gorontalo, Indonesia. I'm currently work in indie
-                        game studio at Otanaha Studio, creating and designing for 2 years</p>
-                    <br>
-                    <p>Proficient in Blender low Poly, Godot Engine and Gdscript, Python, and Html, CSS, JS</p>
-                    <br>
-                    <p>I love game jam, Indomie Goreng, rain, tea, and beach</p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="about-card">
+                            <img src="img/pexels-andrea-piacquadio-3761514.png" alt="profile">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about-card-txt">
+                            <h4>Born in 1997. Raised in small town Gorontalo, Sulawesi Island</h4>
+                            <br>
+                            <p>I'm Ikram Syawal alitu, a multi passinate from Gorontalo, Indonesia. I'm currently work
+                                in indie
+                                game studio at Otanaha Studio, creating and designing for 2 years</p>
+                            <br>
+                            <p>Proficient in Blender low Poly, Godot Engine and Gdscript, Python, and Html, CSS, JS</p>
+                            <br>
+                            <p>I love game jam, Indomie Goreng, rain, tea, and beach</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
-        <section class="portfolio">
-            <h1>portfolio()</h1>
+
+        <section class="portfolio" id="portfolio">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="portfolio-card">
+                            <img src="img/markus-winkler-f57lx37DCM4-unsplash.jpg" alt="profile">
+                            <h1>A.I</h1>
+                            <a href="#">show project</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="portfolio-card">
+                            <img src="img/markus-winkler-IrRbSND5EUc-unsplash.jpg" alt="profile">
+                            <h1>DATA SCIENCE</h1>
+                            <a href="#">show project</a>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="portfolio-card">
+                            <h1>WEB SCRAPING</h1>
+                            <img src="img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="profile">
+                            <a href="#">show project</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="blog" id="blog">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <img src="img/markus-winkler-f57lx37DCM4-unsplash.jpg" alt="profile">
+                            <h4>Blender Guide for Beginner</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <h4>WEB SCRAPING</h4>
+                            <img src="img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="profile">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="team" id="team">
+            <h1 class="team-title">meet the <span>team</span></h1>
+            <div class="card">
+                <img src="/img/pexels-andrea-piacquadio.png" alt="John" style="width:100%">
+                <h1>Ava Mille</h1>
+                <p class="title">CEO & Founder, Example</p>
+                <p>Harvard University</p>
+                <div style="margin: 24px 0;">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+                <p><button>Contact</button></p>
+            </div>
+            <div class="card">
+                <img src="/img/pexels-andrew.png" alt="John" style="width:100%">
+                <h1>John Doe</h1>
+                <p class="title">Lorem ipsum dolor sit.</p>
+                <p>Lorem, ipsum.</p>
+                <div style="margin: 24px 0;">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+                <p><button>Contact</button></p>
+            </div>
+            <div class="card">
+                <img src="/img/pexels-bruno-salvadori.png" alt="John" style="width:100%">
+                <h1>Herman Ashley</h1>
+                <p class="title">Lorem ipsum dolor sit.</p>
+                <p>Lorem, ipsum.</p>
+                <div style="margin: 24px 0;">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+                <p><button>Contact</button></p>
+            </div>
+
+        </section>
+        <section class="contact" id="contact">
+
         </section>
     </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <script src="app.js"></script>
 </body>
 

@@ -13,3 +13,10 @@ var typed = new Typed(".auto-type", {
     backSpeed: 50,
     loop: true
 })
+
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
