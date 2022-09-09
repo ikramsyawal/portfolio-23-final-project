@@ -5,180 +5,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <title>ikramsyawal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>ikram</title>
 </head>
 
 <body>
-    <nav>
-        <div class="first">
-            <a href="#home">ikramsyawalalitu</a>
+    <header>
+        <nav>
+            <div>
+                <a href="#home">ikram</a>
+            </div>
+            <div>
+                <a href="#about">about</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="">menu</a>
+                <a href="">menu</a>
+                <a href="">menu</a>
+            </div>
+
+        </nav>
+    </header>
+    <!-- home -->
+    <section class="home" id="home">
+        <h1>Hi, i'm <span>Ikram</span></h1>
+        <h1>a <span class="typed-string"></span></h1>
+        <div class="circle-big"></div>
+        <div class="circle-small"></div>
+    </section>
+    <!-- about -->
+    <section class="about" id="about">
+        <div class="about-title">
+            <h1>About me</h1>
         </div>
-        <div class="last" id="top-nav">
-            <a href="#about">about</a>
-            <a href="#portfolio">portfolio</a>
-            <a href="">blog</a>
-            <a href="">team</a>
-            <a href="">contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+        <div class="about-content">
+            <div class="profile-txt">
+                <h4>Born in 1997, Raised in small town in Indoensia.</h4>
+                <br>
+                <p>I'm Ikram Syawal Alitu, a multi passinate from Indonesia. I'm currently work
+                    in indie
+                    game studio at Otanaha Studio, creating and designing for 2 years</p>
+                <br>
+                <p>Proficient in Blender low Poly, Godot Engine and Gdscript, Python, and Html, CSS, JS</p>
+                <br>
+                <p>I love game jam, Indomie Goreng, rain, tea, and beach</p>
+            </div>
+            <div class="profile-image">
+                <img src="img/pexels-andrea-piacquadio-3761514.png" alt="">
+            </div>
         </div>
-    </nav>
-    <div class="container">
-        <section class="home" id="home">
-            <h1>hi, i'm ikram</h1>
-            <h1>i'm a <span class="auto-type"></span></h1>
-        </section>
 
-        <section class="about" id="about">
-            <h1>print(<span class="about-span">about_me</span>())</h1>
-            <div class="about-hide">
-                <div class="about-card">
-                    <div class="about-card-txt">
-                        <h4>Born in 1997, Raised in small town Gorontalo, Sulawesi Island.</h4>
-                        <br>
-                        <p>I'm Ikram Syawal alitu, a multi passinate from Gorontalo, Indonesia. I'm currently work
-                            in indie
-                            game studio at Otanaha Studio, creating and designing for 2 years</p>
-                        <br>
-                        <p>Proficient in Blender low Poly, Godot Engine and Gdscript, Python, and Html, CSS, JS</p>
-                        <br>
-                        <p>I love game jam, Indomie Goreng, rain, tea, and beach</p>
+        <div class="card-bg"></div>
+    </section>
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+        <h1>Portfolio</h1>
+        <div class="img-satu project-blog-card">
+            <div class="project-txt">
+                <h1>A.I</h1>
+                <a href="#">
+                    <div class="link-button">
+                        <p>Show project</p>
                     </div>
-                    <img src="img/pexels-andrea-piacquadio-3761514.png" alt="profile">
+                </a>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="img-dua project-blog-card">
+                <div class="project-txt">
+                    <h1>Data Science</h1>
+                    <a href="#">
+                        <div class="link-button">
+                            <p>Show project</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="about-card">
-                            <img src="img/pexels-andrea-piacquadio-3761514.png" alt="profile">
+            <div class="img-tiga project-blog-card">
+                <div class="project-txt">
+                    <h1>Web Scrapping</h1>
+                    <a href="#">
+                        <div class="link-button">
+                            <p>Show project</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="about-card-txt">
-                            <h4>Born in 1997. Raised in small town Gorontalo, Sulawesi Island</h4>
-                            <br>
-                            <p>I'm Ikram Syawal alitu, a multi passinate from Gorontalo, Indonesia. I'm currently work
-                                in indie
-                                game studio at Otanaha Studio, creating and designing for 2 years</p>
-                            <br>
-                            <p>Proficient in Blender low Poly, Godot Engine and Gdscript, Python, and Html, CSS, JS</p>
-                            <br>
-                            <p>I love game jam, Indomie Goreng, rain, tea, and beach</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
-        </section>
+        </div>
+    </section>
+    <!-- blog -->
+    <section class="blog" id="blog">
+        <h1>Blog</h1>
+        <div class="second-row">
+            <div class="img-dua project-blog-card">
+                <div class="project-txt">
+                    <h1>Data Science</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, maxime.</p>
 
-        <section class="portfolio" id="portfolio">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="portfolio-card">
-                            <img src="img/markus-winkler-f57lx37DCM4-unsplash.jpg" alt="profile">
-                            <h1>A.I</h1>
-                            <a href="#">show project</a>
+                    <a href="#">
+                        <div class="link-button">
+                            <p>Show project</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="portfolio-card">
-                            <img src="img/markus-winkler-IrRbSND5EUc-unsplash.jpg" alt="profile">
-                            <h1>DATA SCIENCE</h1>
-                            <a href="#">show project</a>
-
+                    </a>
+                </div>
+            </div>
+            <div class="img-tiga project-blog-card">
+                <div class="project-txt">
+                    <h1>Web Scrapping</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, maxime.</p>
+                    <a href="#">
+                        <div class="link-button">
+                            <p>Show project</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="portfolio-card">
-                            <h1>WEB SCRAPING</h1>
-                            <img src="img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="profile">
-                            <a href="#">show project</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="img-dua project-blog-card">
+                <div class="project-txt">
+                    <h1>Data Science</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, maxime.</p>
 
+                    <a href="#">
+                        <div class="link-button">
+                            <p>Show project</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
-        </section>
+            <div class="img-tiga project-blog-card">
+                <div class="project-txt">
+                    <h1>Web Scrapping</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, maxime.</p>
 
-        <section class="blog" id="blog">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="blog-card">
-                            <img src="img/markus-winkler-f57lx37DCM4-unsplash.jpg" alt="profile">
-                            <h4>Blender Guide for Beginner</h4>
+                    <a href="#">
+                        <div class="link-button">
+                            <p>Show project</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="blog-card">
-                            <h4>WEB SCRAPING</h4>
-                            <img src="img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="profile">
-                        </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
-        </section>
-        <section class="team" id="team">
-            <h1 class="team-title">meet the <span>team</span></h1>
-            <div class="card">
-                <img src="/img/pexels-andrea-piacquadio.png" alt="John" style="width:100%">
-                <h1>Ava Mille</h1>
-                <p class="title">CEO & Founder, Example</p>
-                <p>Harvard University</p>
-                <div style="margin: 24px 0;">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-github"></i></a>
-
-                </div>
-                <p><button>Contact</button></p>
-            </div>
-            <div class="card">
-                <img src="/img/pexels-andrew.png" alt="John" style="width:100%">
-                <h1>John Doe</h1>
-                <p class="title">Lorem ipsum dolor sit.</p>
-                <p>Lorem, ipsum.</p>
-                <div style="margin: 24px 0;">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-github"></i></a>
-                </div>
-                <p><button>Contact</button></p>
-            </div>
-            <div class="card">
-                <img src="/img/pexels-bruno-salvadori.png" alt="John" style="width:100%">
-                <h1>Herman Ashley</h1>
-                <p class="title">Lorem ipsum dolor sit.</p>
-                <p>Lorem, ipsum.</p>
-                <div style="margin: 24px 0;">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-github"></i></a>
-
-                </div>
-                <p><button>Contact</button></p>
-            </div>
-
-        </section>
-        <section class="contact" id="contact">
-
-        </section>
-    </div>
+        </div>
+        <div class="circle-left"></div>
+        <div class="right-circle"></div>
+    </section>
+    <!-- team -->
+    <section class="team" id="team">
+        <h1>Meet The Team</h1>
+    </section>
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <h1>Contact</h1>
+        <form action="https://formsubmit.co/el/luyoni" method="POST" />
+            <label for="text">Name</label>
+            <input type="text" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="hidden" name="_autoresponse" value="Hi, Thankyou for contacting me. this is auto response. i have received your email. please wait for my response>
+            <button type="submit">Send</button>
+       </form>
+    </section>
+    <footer>
+        created by ikram in 2022
+    </footer>
 
 
+    <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
