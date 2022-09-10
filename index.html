@@ -6,33 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>ikram</title>
 </head>
 
 <body>
-    <header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">UP</button>
+    <header id="home">
         <nav>
-            <div>
+            <div class="topnav" id="myTopnav">
                 <a href="#home">ikram</a>
-            </div>
-            <div>
                 <a href="#about">about</a>
                 <a href="#portfolio">portfolio</a>
-                <a href="">menu</a>
-                <a href="">menu</a>
-                <a href="">menu</a>
+                <a href="#blog">blog</a>
+                <a href="#team">team</a>
+                <a href="#contact">contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
-
         </nav>
     </header>
+
     <!-- home -->
-    <section class="home" id="home">
+    <section class="home">
         <h1>Hi, i'm <span>Ikram</span></h1>
         <h1>a <span class="typed-string"></span></h1>
         <div class="circle-big"></div>
         <div class="circle-small"></div>
     </section>
+
     <!-- about -->
     <section class="about" id="about">
         <div class="about-title">
@@ -57,6 +61,7 @@
 
         <div class="card-bg"></div>
     </section>
+
     <!-- portfolio -->
     <section class="portfolio" id="portfolio">
         <h1>Portfolio</h1>
@@ -93,55 +98,56 @@
             </div>
         </div>
     </section>
+
     <!-- blog -->
     <section class="blog" id="blog">
         <h1>Blog</h1>
         <div class="second-row">
-            <div class="img-dua project-blog-card">
+            <div class="img-empat project-blog-card">
                 <div class="project-txt">
-                    <h1>Data Science</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, maxime.</p>
+                    <h1>Low Poly 3D</h1>
+                    <p>Lets learn and make 3d low poly for your game..</p>
 
                     <a href="#">
                         <div class="link-button">
-                            <p>Show project</p>
+                            <p>Read More</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="img-tiga project-blog-card">
+            <div class="img-lima project-blog-card">
                 <div class="project-txt">
-                    <h1>Web Scrapping</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, maxime.</p>
+                    <h1>Color Tips</h1>
+                    <p>This is how i choose colors, and you should too!!..</p>
                     <a href="#">
                         <div class="link-button">
-                            <p>Show project</p>
+                            <p>Read More</p>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
         <div class="second-row">
-            <div class="img-dua project-blog-card">
+            <div class="img-enam project-blog-card">
                 <div class="project-txt">
-                    <h1>Data Science</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, maxime.</p>
+                    <h1>Learn Python</h1>
+                    <p>Python is beginner friendly computer langunge that you should learn right now..</p>
 
                     <a href="#">
                         <div class="link-button">
-                            <p>Show project</p>
+                            <p>Read More</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="img-tiga project-blog-card">
+            <div class="img-tujuh project-blog-card">
                 <div class="project-txt">
-                    <h1>Web Scrapping</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, maxime.</p>
+                    <h1>Hidden Website</h1>
+                    <p>10 Website that you should know right now..</p>
 
                     <a href="#">
                         <div class="link-button">
-                            <p>Show project</p>
+                            <p>Read More</p>
                         </div>
                     </a>
                 </div>
@@ -150,18 +156,63 @@
         <div class="circle-left"></div>
         <div class="right-circle"></div>
     </section>
+
     <!-- team -->
     <section class="team" id="team">
-        <h1>Meet The Team</h1>
+        <h1 class="judul">Meet The Team</h1>
+        <div class="team-container">
+            <div class="card">
+                <img src="/img/pexels-andrew.png" alt="andrew" style="width:100%">
+                <h1>Andrew Fort</h1>
+                <p class="title">Illustrator</p>
+                <div style="margin: 24px 0;">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+                <p><button>Contact</button></p>
+            </div>
+            <div class="card">
+                <img src="/img/pexels-bruno-salvadori.png" alt="bruno" style="width:100%">
+                <h1>Bruno Salvadori</h1>
+                <p class="title">Back End Developer</p>
+                <div style="margin: 24px 0;">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+                <p><button>Contact</button></p>
+            </div>
+            <div class="card">
+                <img src="/img/pexels-vinicius-wiesehofer.png" alt="Ava" style="width:100%">
+                <h1>Ava Millie</h1>
+                <p class="title">Front End Developer</p>
+                <div style="margin: 24px 0;">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+                <p><button>Contact</button></p>
+            </div>
+        </div>
+
     </section>
+
     <!-- contact -->
     <section class="contact" id="contact">
         <h1>Contact</h1>
-        <form action="https://formsubmit.co/ikramsyawalalitu@gmail.com" method="POST">
-            <input type="text" name="name" required>
-            <input type="email" name="email" required>
-            <button type="submit">Send</button>
-       </form>
+        <div class="contact-form">
+            <form>
+                <label for="nama">Name</label>
+                <input type="text" name="nama" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+                <label for="pesan">message</label>
+                <textarea name="pesan" cols="30" rows="10" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
     </section>
     <footer>
         created by ikram in 2022
